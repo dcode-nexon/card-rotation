@@ -5,7 +5,7 @@ function Btns({ frame, len }) {
 
 	const moveCard = (num) => {
 		setNum(num);
-		frame.current.style.transform = `rotate(${(360 / len.current) * Num}deg)`;
+		frame.current.style.transform = `rotate(${(360 / len) * Num}deg)`;
 	};
 
 	return (
