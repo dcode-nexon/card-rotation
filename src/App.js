@@ -1,14 +1,20 @@
+import './scss/style.scss';
 import Footer from './Footer';
 import Header from './Header';
 import Section from './Section';
-import './scss/style.scss';
+import Btns from './Btns';
+import { useRef } from 'react';
 
 function App() {
+	const frame = useRef(null);
+	const len = useRef(0);
+
 	return (
 		<>
 			<Header />
-			<Section />
+			<Section frame={frame} len={len} />
 			<Footer />
+			<Btns frame={frame} len={len} />
 		</>
 	);
 }
