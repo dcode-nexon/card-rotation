@@ -20,6 +20,7 @@ function Btns({ frame, len, prev, next }) {
 			>
 				PREV
 			</button>
+
 			<button
 				className='next'
 				onClick={() => {

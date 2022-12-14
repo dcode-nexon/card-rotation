@@ -3,7 +3,7 @@ function Card({ data, len, idx, Active }) {
 		transform: `rotate(${(360 / len) * idx}deg) translateY(-95vh)`,
 	};
 	let isOn = '';
-	idx === Active ? (isOn = 'on') : (isOn = '');
+	idx === Active && (isOn = 'on');
 
 	return (
 		<article style={style} className={isOn}>
